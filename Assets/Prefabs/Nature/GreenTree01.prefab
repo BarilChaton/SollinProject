@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7947345789339504741}
   - component: {fileID: 6477723784878497728}
   - component: {fileID: 9079688131490933514}
-  - component: {fileID: 8323697511125620760}
   - component: {fileID: 1036476595526877545}
   m_Layer: 0
   m_Name: GreenTree01
@@ -85,36 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!205 &8323697511125620760
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7278226359258139359}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 2.0797553, y: 5.3939557, z: 15.177216}
-  m_Size: 12.055905
-  m_FadeMode: 2
-  m_AnimateCrossFading: 1
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.6
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: -7511558181221131132, guid: 8c9f4bf2d4c72324c90b769c342b06cf,
-        type: 3}
-  - screenRelativeHeight: 0.3
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: -7511558181221131132, guid: 8c9f4bf2d4c72324c90b769c342b06cf,
-        type: 3}
-  - screenRelativeHeight: 0.1
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: -7511558181221131132, guid: 8c9f4bf2d4c72324c90b769c342b06cf,
-        type: 3}
-  m_Enabled: 1
 --- !u!136 &1036476595526877545
 CapsuleCollider:
   m_ObjectHideFlags: 0

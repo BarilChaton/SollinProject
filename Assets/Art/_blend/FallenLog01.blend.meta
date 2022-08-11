@@ -1,16 +1,11 @@
 fileFormatVersion: 2
-guid: ac2445b19986a6d4f9db11e6511232bf
+guid: 3daf04c34ba6e9c46b46e12cf809028f
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Cliff
-    second: {fileID: 2100000, guid: e3610652ffc93804c85699bf8b839683, type: 2}
+  externalObjects: {}
   materials:
-    materialImportMode: 1
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
     materialLocation: 1
