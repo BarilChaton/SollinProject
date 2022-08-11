@@ -139,6 +139,9 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator CrouchStand()
     {
+        if (isCrouching && Physics.Raycast(playerCamera.transform.position, Vector3.up, 1f))
+            yield break;
+
         duringCrouchAnimation = true;
 
         float timeElapsed = 0;
