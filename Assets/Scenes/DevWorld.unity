@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -294,7 +294,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8
+  orthographic size: 15
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -2229,7 +2229,7 @@ GameObject:
   - component: {fileID: 1413865764}
   - component: {fileID: 1413865763}
   m_Layer: 5
-  m_Name: Image
+  m_Name: MinimapBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2253,7 +2253,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 160}
-  m_SizeDelta: {x: 301, y: 310}
+  m_SizeDelta: {x: 401, y: 310}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1413865763
 MonoBehaviour:
@@ -2412,10 +2412,10 @@ RectTransform:
   m_Father: {fileID: 953610567}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 324}
+  m_SizeDelta: {x: 1376, y: 648}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1564935667 stripped
 Transform:
@@ -2703,6 +2703,7 @@ MonoBehaviour:
   jumpKey: 32
   crouchKey: 306
   runToggleKey: 301
+  mouseToggleKey: 308
   crouchSpeed: 2
   walkSpeed: 4
   runSpeed: 7
@@ -2754,7 +2755,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 160}
-  m_SizeDelta: {x: 2400, y: 320}
+  m_SizeDelta: {x: 2400, y: 324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1684389839
 MonoBehaviour:
