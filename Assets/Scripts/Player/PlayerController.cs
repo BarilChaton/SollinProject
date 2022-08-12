@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private KeyCode jumpKey = KeyCode.Space;
     [SerializeField] private KeyCode crouchKey = KeyCode.LeftControl;
     [SerializeField] private KeyCode runToggleKey = KeyCode.CapsLock;
+    [SerializeField] private KeyCode mouseToggleKey = KeyCode.LeftAlt;
 
     [Header("Movement Parameters")]
     [SerializeField] private float crouchSpeed = 1.5f;
@@ -45,6 +46,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Vector3 standingCenter = new Vector3(0, 0, 0);
     private bool isCrouching;
     private bool duringCrouchAnimation;
+    private bool mouseCursorIsToggled = false;
 
     private Camera playerCamera;
     private CharacterController characterController;
@@ -67,13 +69,17 @@ public class PlayerController : MonoBehaviour
         if (CanMove)
         {
             HandleMovementInput();
-            HandleMouseLook();
+
+            if(!mouseCursorIsToggled)
+                HandleMouseLook();
 
             if (canJump)
                 HandleJump();
 
             if (canCrouch)
                 HandleCrouch();
+
+            HandleMouseToggle();
 
             ApplyFinalMovements();
         }
@@ -107,6 +113,22 @@ public class PlayerController : MonoBehaviour
             moveDirection.y = moveDirectionY;
         }
         
+    }
+
+    private void HandleMouseToggle()
+    {
+        if (Input.GetKeyUp(mouseToggleKey) && !mouseCursorIsToggled)
+        {
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+            mouseCursorIsToggled = true;
+        }
+        else if (Input.GetKeyUp(mouseToggleKey) && mouseCursorIsToggled)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            mouseCursorIsToggled = false;
+        }
     }
 
     private void HandleJump()
