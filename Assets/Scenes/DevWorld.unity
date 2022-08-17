@@ -500,7 +500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   directionalLight: {fileID: 410087040}
   preset: {fileID: 11400000, guid: f84c9eb9d54c1124180e1fc74ce31911, type: 2}
-  timeOfDay: 288
+  timeOfDay: 576
 --- !u!1001 &435160975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3289,6 +3289,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741160611857594669, guid: 924588456d88faf40a31dd89c090165f,
+        type: 3}
+      propertyPath: simulationSpeed
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8741160611857594671, guid: 924588456d88faf40a31dd89c090165f,
         type: 3}
